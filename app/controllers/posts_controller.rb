@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-end
+
 
 def new
   @post = Post.new
@@ -16,3 +16,4 @@ def create
   redirect_to "/places/#{@post["place_id"]}"
 end
 
+end

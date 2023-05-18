@@ -1,7 +1,8 @@
-<h1> My Travel Logs </h1>
+<h1> Travel Diary </h1>
 <p> Click on a city to access logs for each place or simply add a new place! </p>
 
 <ul>
+
   <% for place in @places %>
     <li>
       <a href="/places/<%= place["id"] %>">
@@ -10,6 +11,7 @@
     </li>
   <% end %>
 </ul>
+
 
 <p>
   <a href="places/new"> <b> Add a new place </b> </a>
